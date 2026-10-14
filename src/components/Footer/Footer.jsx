@@ -13,7 +13,7 @@ export default function Footer(){
                     </div>
                     <div>
                         <input type="text" name="" id="" placeholder="Enter Email Address"/>
-                        <button type="submit">Sign Up</button>
+                        <button type="button">Sign Up</button>
                     </div>
                     <div>
                         <p></p>
