@@ -1,6 +1,6 @@
-import "./Header.css"
+import "./Nav.css"
 
-export default function Header(){
+export default function Nav(){
 
 
     return(
