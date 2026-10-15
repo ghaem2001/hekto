@@ -4,7 +4,7 @@ export default function Header(){
 
 
     return(
-        <div>
+        <div className="bg-white">
 
             {/* Logo */}
             <div>Hekto</div>
@@ -27,6 +27,7 @@ export default function Header(){
                     <div></div>
                 </div>
             </div>
+
         </div>
     )
 }
