@@ -1,6 +1,6 @@
 export default function Header(){
     return(
-        <div className="flex justify-around items-center h-11 bg-[#7E33E0]">
+        <div className="flex justify-around items-center h-11 bg-[#7E33E0] font-medium">
 
             <div className="flex text-white gap-10">
                 <p>ghaemde@gmail.com</p>
