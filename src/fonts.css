@@ -1,0 +1,20 @@
+/* thin */
+@import url("./assets/fonts/josefin-thin/stylesheet.css");
+
+/* extra light */
+@import url("./assets/fonts/josefinSans-extraLight/stylesheet.css");
+
+/* light */
+@import url("./assets/fonts/josefinSans-light/stylesheet.css");
+
+/* regular */
+@import url("./assets/fonts/josefinSans-regular/stylesheet.css");
+
+/* medium */
+@import url("./assets/fonts/josefinSans-medium/stylesheet.css");
+
+/* bold */
+@import url("./assets/fonts/josefinSans-bold/stylesheet.css");
+
+/* semi bold */
+@import url("./assets/fonts/josefinSans-semiBold/stylesheet.css");
