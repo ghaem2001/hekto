@@ -2,7 +2,7 @@ import "./Footer.css"
 
 export default function Footer(){
     return(
-        <div className="w-full h-133 absolute bottom-0 left-0">
+        <div className="w-full h-133 static bottom-0 left-0">
 
             {/* Top Side */}
             <div className="w-full flex justify-around items-center h-119.75 bg-[#EEEFFB] text-[#8A8FB9]">
