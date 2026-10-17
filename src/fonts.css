@@ -1,20 +1,36 @@
-/* thin */
-@import url("./assets/fonts/josefin-thin/stylesheet.css");
+/* Josefin Sans-thin */
+@import url("./assets/fonts/Josefin Sans/josefin-thin/stylesheet.css");
 
-/* extra light */
-@import url("./assets/fonts/josefinSans-extraLight/stylesheet.css");
+/* Josefin Sans-extra light */
+@import url("./assets/fonts/Josefin Sans/josefinSans-extraLight/stylesheet.css");
 
-/* light */
-@import url("./assets/fonts/josefinSans-light/stylesheet.css");
+/* Josefin Sans-light */
+@import url("./assets/fonts/Josefin Sans/josefinSans-light/stylesheet.css");
 
-/* regular */
-@import url("./assets/fonts/josefinSans-regular/stylesheet.css");
+/* Josefin Sans-regular */
+@import url("./assets/fonts/Josefin Sans/josefinSans-regular/stylesheet.css");
 
-/* medium */
-@import url("./assets/fonts/josefinSans-medium/stylesheet.css");
+/* Josefin Sans-medium */
+@import url("./assets/fonts/Josefin Sans/josefinSans-medium/stylesheet.css");
 
-/* bold */
-@import url("./assets/fonts/josefinSans-bold/stylesheet.css");
+/* Josefin Sans-bold */
+@import url("./assets/fonts/Josefin Sans/josefinSans-bold/stylesheet.css");
 
-/* semi bold */
-@import url("./assets/fonts/josefinSans-semiBold/stylesheet.css");
+/* Josefin Sans-semi bold */
+@import url("./assets/fonts/Josefin Sans/josefinSans-semiBold/stylesheet.css");
+
+
+/* Lato-thin */
+@import url("./assets/fonts/Lato/lato-thin/stylesheet.css");
+
+/* Lato-light */
+@import url("./assets/fonts/Lato/lato-light/stylesheet.css");
+
+/* Lato-regular */
+@import url("./assets/fonts/Lato/lato-regular/stylesheet.css");
+
+/* Lato-bold */
+@import url("./assets/fonts/Lato/lato-bold/stylesheet.css");
+
+/* Lato-black */
+@import url("./assets/fonts/Lato/lato-black/stylesheet.css");
