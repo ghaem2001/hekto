@@ -4,11 +4,11 @@ export default function Nav(){
 
 
     return(
-            <div className="w-full h-19.5 flex justify-around items-center text-[#0D0E43]">
+            <div className="fixed w-full h-19.5 flex justify-around items-center text-[#0D0E43] border-b border-[#E7E6EF]">
 
                 {/* Logo */}
                 <div>
-                    <h2 className="relative left-50 font-bold text-3xl">Hekto</h2>
+                    <h2 className="relative left-50 font-bold text-[34px]">Hekto</h2>
                 </div>
 
                 {/* Site Pages */}
