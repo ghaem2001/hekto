@@ -1,7 +1,7 @@
 import lamp from "../assets/pictures/home-lamp.png"
 import sofa from "../assets/pictures/home-sofa.png"
-import Featured from "../components/Featured/Featured"
-import Leatest from "../components/Leatest/Leatest"
+import FeaturedCard from "../components/FeaturedCard/FeaturedCard"
+import LeatestCard from "../components/LeatestCard/LeatestCard"
 import PinkBtn from "../components/PinkBtn/PinkBtn"
 
 
@@ -38,16 +38,16 @@ export default function Home(){
             <div className="flex flex-col gap-7 justify-center items-center mt-30">
                 <p className="text-[42px] font-bold text-[#1A0B5B]">Featured Products</p>
                 <div className="flex gap-9">
-                    <Featured/>
-                    <Featured/>
-                    <Featured/>
-                    <Featured/>
+                    <FeaturedCard/>
+                    <FeaturedCard/>
+                    <FeaturedCard/>
+                    <FeaturedCard/>
                 </div>
-                <div className="flex rounded gap-2 mt-15">
-                    <div className="w-[24px] h-[4px] bg-[#FB2E86]"></div>
-                    <div className="w-[16px] h-[4px] bg-[#FEBAD7]"></div>
-                    <div className="w-[16px] h-[4px] bg-[#FEBAD7]"></div>
-                    <div className="w-[16px] h-[4px] bg-[#FEBAD7]"></div>
+                <div className="flex gap-2 mt-15">
+                    <div className="w-[24px] rounded h-[4px] bg-[#FB2E86]"></div>
+                    <div className="w-[16px] rounded h-[4px] bg-[#FEBAD7]"></div>
+                    <div className="w-[16px] rounded h-[4px] bg-[#FEBAD7]"></div>
+                    <div className="w-[16px] rounded h-[4px] bg-[#FEBAD7]"></div>
                 </div>
             </div>
 
@@ -56,22 +56,24 @@ export default function Home(){
                 <div>
                     <p className="font-bold text-[42px] text-[#151875]">Leatest Products</p>
                 </div>
-                <div className="text-[#151875] text-[18px] flex gap-18 mt-12">
+                <div className="font-lato text-[#151875] text-[18px] flex gap-18 mt-12">
                     <p>New Arrival</p>
                     <p>Best Seller</p>
                     <p>Featured</p>
                     <p>Special Offer</p>
                 </div>
                 <div className="mt-18 grid grid-cols-3 gap-15">
-                    <Leatest/>
-                    <Leatest/>
-                    <Leatest/>
-                    <Leatest/>
-                    <Leatest/>
-                    <Leatest/>
+                    <LeatestCard/>
+                    <LeatestCard/>
+                    <LeatestCard/>
+                    <LeatestCard/>
+                    <LeatestCard/>
+                    <LeatestCard/>
                 </div>
             </div>
 
+
+            {/* Offer Card */}
         </div>
     )
 }
