@@ -1,9 +1,13 @@
 import lamp from "../assets/pictures/home-lamp.png"
 import sofa from "../assets/pictures/home-sofa.png"
+import Featured from "../components/Featured/Featured"
+import Leatest from "../components/Leatest/Leatest"
+import PinkBtn from "../components/PinkBtn/PinkBtn"
+
 
 export default function Home(){
     return(
-        <div  className="h-500">
+        <div  className="h-800">
 
             {/* first banner */}
             <div className="w-full h-191 bg-[#F2F0FF] flex flex-col items-center">
@@ -16,9 +20,7 @@ export default function Home(){
                             <p className="font-lato text-[#FB2E86]">Best Furniture For Your Castle....</p>
                             <p className="text-[53px] font-bold">New Furniture Collection Trends in 2020</p>
                             <p className="font-lato text-[#8A8FB9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
-                            <button className="static top-5 rounded text-white w-[163px] h-[50px] bg-[#FB2E86] text-center">
-                                Shop Now
-                            </button>
+                            <PinkBtn/>
                         </div>
                         <div>
                             <img className="static right-10" src={sofa} alt="" />
@@ -33,24 +35,40 @@ export default function Home(){
             </div>
 
             {/* Featured Products */}
-            <div className="flex flex-col gap-7 justify-center">
-                <p>Featured Products</p>
+            <div className="flex flex-col gap-7 justify-center items-center mt-30">
+                <p className="text-[42px] font-bold text-[#1A0B5B]">Featured Products</p>
+                <div className="flex gap-9">
+                    <Featured/>
+                    <Featured/>
+                    <Featured/>
+                    <Featured/>
+                </div>
+                <div className="flex rounded gap-2 mt-15">
+                    <div className="w-[24px] h-[4px] bg-[#FB2E86]"></div>
+                    <div className="w-[16px] h-[4px] bg-[#FEBAD7]"></div>
+                    <div className="w-[16px] h-[4px] bg-[#FEBAD7]"></div>
+                    <div className="w-[16px] h-[4px] bg-[#FEBAD7]"></div>
+                </div>
+            </div>
+
+            {/* Leatest Products */}
+            <div className="flex flex-col justify-center items-center mt-30">
                 <div>
-                    <div>
-                        <div>
-                            <img src="" alt="" />
-                        </div>
-                        <div className="w-[270px] h-[361px] flex flex-col border">
-                            <p className="text-[18px] text-[#FB2E86] font-lato font-bold">Cantilever chair</p>
-                            <div>
-                                <div className="w-[14px] h-[4px] bg-[#05E6B7]"></div>
-                                <div className="w-[14px] h-[4px] bg-[#F701A8]"></div>
-                                <div className="w-[14px] h-[4px] bg-[#00009D]"></div>
-                            </div>
-                            <p className="text-[#151875] text-[14px]">Code - Y523201</p>
-                            <p className="text-[#151875] text-[14px]">$42.00</p>
-                        </div>
-                    </div>
+                    <p className="font-bold text-[42px] text-[#151875]">Leatest Products</p>
+                </div>
+                <div className="text-[#151875] text-[18px] flex gap-18 mt-12">
+                    <p>New Arrival</p>
+                    <p>Best Seller</p>
+                    <p>Featured</p>
+                    <p>Special Offer</p>
+                </div>
+                <div className="mt-18 grid grid-cols-3 gap-15">
+                    <Leatest/>
+                    <Leatest/>
+                    <Leatest/>
+                    <Leatest/>
+                    <Leatest/>
+                    <Leatest/>
                 </div>
             </div>
 
