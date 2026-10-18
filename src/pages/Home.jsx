@@ -6,7 +6,7 @@ export default function Home(){
         <div  className="h-500">
 
             {/* first banner */}
-            <div className="w-full h-196 bg-[#F2F0FF] flex flex-col items-center">
+            <div className="w-full h-191 bg-[#F2F0FF] flex flex-col items-center">
                 <div className="w-full h-full flex justify-around">
                     <div>
                         <img className="static right-4" src={lamp} alt="lamp picture" />
@@ -25,7 +25,7 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-                <div className="flex gap-2 static bottom-20">
+                <div className="flex gap-2 mb-10">
                     <button className="w-[10px] h-[10px] bg-[#FB2E86] rotate-45 border border-[#FB2E86]"></button>
                     <button className="w-[10px] h-[10px] rotate-45 border border-[#FB2E86]"></button>
                     <button className="w-[10px] h-[10px] rotate-45 border border-[#FB2E86]"></button>
