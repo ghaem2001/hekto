@@ -13,7 +13,7 @@ export default function LeatestCard(){
                 </div>
                 <div className="flex gap-3">
                     <p className="text-[14px] text-[#151875]">$42.00</p>
-                    <p className="text-[12px] text-[#FB2448]">$65.00</p>
+                    <p className="text-[12px] text-[#FB2448] line-through decoration-2">$65.00</p>
                 </div>
             </div>
         </div>
