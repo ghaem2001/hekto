@@ -1,14 +1,18 @@
+// import pictures
 import lamp from "../assets/pictures/home-lamp.png"
 import sofa from "../assets/pictures/home-sofa.png"
 import furniture from "../assets/pictures/Group 153.png"
-import desk from "../assets/pictures/image 1161.png"
-import safa2 from "../assets/pictures/image 19.png"
+import chair from "../assets/pictures/Group 154.png"
 
+// import files
 import FeaturedCard from "../components/FeaturedCard/FeaturedCard"
 import LeatestCard from "../components/LeatestCard/LeatestCard"
 import OfferCard from "../components/OfferCard/OfferCard"
 import PinkBtn from "../components/PinkBtn/PinkBtn"
 import TrendingCard from "../components/TrendingCard/TrendingCard"
+import TrendingBigCard from "../components/TrendingBigCard/TrendingBigCard"
+import TrendingSmallCard from "../components/TrendingSmallCard/TrendingSmallCard"
+import TopCategory from "../components/TopCategory/TopCategory"
 
 
 export default function Home(){
@@ -97,28 +101,28 @@ export default function Home(){
             {/* Banner Trending */}
             <div className="w-full not-last-of-type:h-[579px] bg-[#F1F0FF] mt-50 flex justify-center items-center">
                 <div>
-                    <img src={furniture} alt="" />
+                    <img src={furniture} alt="furniture picture" />
                 </div>
-                <div className="flex flex-col justify-start items-center">
+                <div className="flex flex-col items-start gap-5">
                     <div>
                         <p className="text-[35px] font-bold text-[#151875]">
-                            Unique Features Of leatest & Trending Poducts
+                            Unique Features Of leatest & <br /> Trending Poducts
                         </p>
                     </div>
                     <div>
-                        <ul className="">
+                        <ul className="text-[#ACABC3] list-disc marker:text-2xl list-inside marker:text-[#F52B70]">
                             <li>All frames constructed with hardwood solids and laminates</li>
-                            <li>Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails</li>
+                            <li>Reinforced with double wood dowels, glue, screw - nails corner <br /> blocks and machine nails</li>
                             <li>Arms, backs and seats are structurally reinforced</li>
                         </ul>
                     </div>
-                    <div className="">
+                    <div className="flex justify-center items-center gap-7">
                         <div>
                             <PinkBtn/>
                         </div>
-                        <div className="">
-                            <p>B&B Italian Sofa </p>
-                            <p>$32.00</p>
+                        <div className="text-[14px]">
+                            <p className="font-semibold">B&B Italian Sofa </p>
+                            <p className="font-lato">$32.00</p>
                         </div>
                     </div>
                 </div>
@@ -138,89 +142,78 @@ export default function Home(){
                     <TrendingCard/>
                 </div>
                 <div className="flex gap-10">
-                    <div className="gap-4 w-[420px] h-[270px] bg-[#EEEFFB] flex flex-col justify-center items-center">
-                        <div className="mr-25">
-                            <p className="text-[26px] font-semibold text-[#151875]">23% off in all products</p>
-                            <p className="text-[#FB2E86] underline decoration-[#FB2E86]">View Collection</p>
-                        </div>
-                        <div>
-                            <img className="ml-25" src={desk} alt="" />
-                        </div>
-                    </div>
-
-                    <div className="gap-4 w-[420px] h-[270px] bg-[#EEEFFB] flex flex-col justify-center items-center">
-                        <div className="mr-25">
-                            <p className="text-[26px] font-semibold text-[#151875]">23% off in all products</p>
-                            <p className="text-[#FB2E86] underline decoration-[#FB2E86]">View Collection</p>
-                        </div>
-                        <div>
-                            <img className="ml-25" src={desk} alt="" />
-                        </div>
-                    </div>
+                    <TrendingBigCard/>
+                    <TrendingBigCard/>
 
                     <div className="flex flex-col justify-between gap-2">
-                        <div className="w-[267px] h-[74px] flex justify-center items-center gap-3">
-                            <div className="w-[107px] h-full bg-[#F5F6F8] flex justify-center items-center">
-                                <img src={safa2} alt="" />
-                            </div>
-                            <div className="flex flex-col gap">
-                                <p className="text-[#151875]">Executive Seat chair</p>
-                                <p className="text-[12px] text-[#151875] line-through">$32.00</p>
-                            </div>
-                        </div>
-                        <div className="w-[267px] h-[74px] flex justify-center items-center gap-3">
-                            <div className="w-[107px] h-full bg-[#F5F6F8] flex justify-center items-center">
-                                <img src={safa2} alt="" />
-                            </div>
-                            <div className="flex flex-col gap">
-                                <p className="text-[#151875]">Executive Seat chair</p>
-                                <p className="text-[12px] text-[#151875] line-through">$32.00</p>
-                            </div>
-                        </div>
-                        <div className="w-[267px] h-[74px] flex justify-center items-center gap-3">
-                            <div className="w-[107px] h-full bg-[#F5F6F8] flex justify-center items-center">
-                                <img src={safa2} alt="" />
-                            </div>
-                            <div className="flex flex-col gap">
-                                <p className="text-[#151875]">Executive Seat chair</p>
-                                <p className="text-[12px] text-[#151875] line-through">$32.00</p>
-                            </div>
-                        </div>
+                        <TrendingSmallCard/>
+                        <TrendingSmallCard/>
+                        <TrendingSmallCard/>
                     </div>
                 </div>
             </div>
 
             {/* Discount Item */}
-            <div>
+            <div className="flex flex-col justify-center items-center mt-30">
                 <div>
-                    <p></p>
+                    <p className="text-[42px] text-[#151875] font-bold">Discount Item</p>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                <div className="flex gap-10 mt-7 text-[#151875] font-lato text-[18px]">
+                    <p className="text-[#FB2E86] decoration-1 underline">Wood Chair</p>
+                    <p>Plastic Chair</p>
+                    <p>Sofa Colletion</p>
                 </div>
-                <div>
-                    <div>
+                <div className="flex justify-center items-center gap-">
+                    <div className="flex flex-col gap-6">
                         <div>
-                            <p></p>
+                            <p className="text-[35px] text-[#151875] font-bold">20% Discount Of All Products</p>
                         </div>
                         <div>
-                            <p></p>
+                            <p className="text-[21px] text-[#FB2E86]">Eams Sofa Compact</p>
                         </div>
                         <div>
-                            <p></p>
+                            <p className="text-[17px] text-[#B7BACB]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget<br/>feugiat habitasse nec, bibendum condimentum.</p>
                         </div>
                         <div>
-
+                            <ul className="text-[#B8B8DC] grid grid-cols-2 gap-4">
+                                <li>Material expose like metals</li>
+                                <li>Clear lines and geomatric figures</li>
+                                <li>Simple neutral colours.</li>
+                                <li>Material expose like metals</li>
+                            </ul>
                         </div>
-                        <div></div>
+                        <div className="mt-5">
+                            <PinkBtn/>
+                        </div>
                     </div>
                     <div>
-                        <img src="" alt="" />
+                        <img src={chair} alt="chair picture" />
                     </div>
                 </div>
             </div>
+
+            {/* Top Categories */}
+            <div className="flex flex-col justify-center items-center mt-30">
+                <div>
+                    <p className="text-[42px] text-[#151875] font-bold">Top Categories</p>
+                </div>
+                <div className="flex gap-13 mt-15">
+                    <TopCategory/>
+                    <TopCategory/>
+                    <TopCategory/>
+                    <TopCategory/>
+                </div>
+                <div className="flex justify-center items-center gap-4 mt-15">
+                    <div className="w-[10px] h-[10px]  bg-[#FB2E86] rounded-[50%]"></div>
+                    <div className="w-[10px] h-[10px] border border-[#FB2E86] rounded-[50%]"></div>
+                    <div className="w-[10px] h-[10px] border border-[#FB2E86] rounded-[50%]"></div>
+                </div>
+            </div>
+
+
+
+
+
 
 
         </div>
