@@ -1,13 +1,19 @@
 import lamp from "../assets/pictures/home-lamp.png"
 import sofa from "../assets/pictures/home-sofa.png"
+import furniture from "../assets/pictures/Group 153.png"
+import desk from "../assets/pictures/image 1161.png"
+import safa2 from "../assets/pictures/image 19.png"
+
 import FeaturedCard from "../components/FeaturedCard/FeaturedCard"
 import LeatestCard from "../components/LeatestCard/LeatestCard"
+import OfferCard from "../components/OfferCard/OfferCard"
 import PinkBtn from "../components/PinkBtn/PinkBtn"
+import TrendingCard from "../components/TrendingCard/TrendingCard"
 
 
 export default function Home(){
     return(
-        <div  className="h-800">
+        <div  className="">
 
             {/* first banner */}
             <div className="w-full h-191 bg-[#F2F0FF] flex flex-col items-center">
@@ -18,8 +24,8 @@ export default function Home(){
                     <div className="flex items-center">
                         <div className="static right-12 bottom-7 flex flex-col gap-4">
                             <p className="font-lato text-[#FB2E86]">Best Furniture For Your Castle....</p>
-                            <p className="text-[53px] font-bold">New Furniture Collection Trends in 2020</p>
-                            <p className="font-lato text-[#8A8FB9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+                            <p className="text-[53px] font-bold">New Furniture Collection <br /> Trends in 2020</p>
+                            <p className="font-lato text-[#8A8FB9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing <br/> in phasellus non in justo.</p>
                             <PinkBtn/>
                         </div>
                         <div>
@@ -74,6 +80,149 @@ export default function Home(){
 
 
             {/* Offer Card */}
+            <div className="flex flex-col gap-15 items-center mt-40">
+                <div>
+                    <p className="text-[42px] text-[#151875] font-bold">
+                        What Shopex Offer!
+                    </p>
+                </div>
+                <div className="flex justify-center gap-10">
+                    <OfferCard/>
+                    <OfferCard/>
+                    <OfferCard/>
+                    <OfferCard/>
+                </div>
+            </div>
+
+            {/* Banner Trending */}
+            <div className="w-full not-last-of-type:h-[579px] bg-[#F1F0FF] mt-50 flex justify-center items-center">
+                <div>
+                    <img src={furniture} alt="" />
+                </div>
+                <div className="flex flex-col justify-start items-center">
+                    <div>
+                        <p className="text-[35px] font-bold text-[#151875]">
+                            Unique Features Of leatest & Trending Poducts
+                        </p>
+                    </div>
+                    <div>
+                        <ul className="">
+                            <li>All frames constructed with hardwood solids and laminates</li>
+                            <li>Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails</li>
+                            <li>Arms, backs and seats are structurally reinforced</li>
+                        </ul>
+                    </div>
+                    <div className="">
+                        <div>
+                            <PinkBtn/>
+                        </div>
+                        <div className="">
+                            <p>B&B Italian Sofa </p>
+                            <p>$32.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Trending Products */}
+            <div className="flex flex-col justify-center items-center mt-30 gap-14">
+                <div>
+                    <p className="text-[42px] text-[#151875] font-bold">
+                        Trending Products
+                    </p>
+                </div>
+                <div className="flex justify-center items-center gap-10">
+                    <TrendingCard/>
+                    <TrendingCard/>
+                    <TrendingCard/>
+                    <TrendingCard/>
+                </div>
+                <div className="flex gap-10">
+                    <div className="gap-4 w-[420px] h-[270px] bg-[#EEEFFB] flex flex-col justify-center items-center">
+                        <div className="mr-25">
+                            <p className="text-[26px] font-semibold text-[#151875]">23% off in all products</p>
+                            <p className="text-[#FB2E86] underline decoration-[#FB2E86]">View Collection</p>
+                        </div>
+                        <div>
+                            <img className="ml-25" src={desk} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="gap-4 w-[420px] h-[270px] bg-[#EEEFFB] flex flex-col justify-center items-center">
+                        <div className="mr-25">
+                            <p className="text-[26px] font-semibold text-[#151875]">23% off in all products</p>
+                            <p className="text-[#FB2E86] underline decoration-[#FB2E86]">View Collection</p>
+                        </div>
+                        <div>
+                            <img className="ml-25" src={desk} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col justify-between gap-2">
+                        <div className="w-[267px] h-[74px] flex justify-center items-center gap-3">
+                            <div className="w-[107px] h-full bg-[#F5F6F8] flex justify-center items-center">
+                                <img src={safa2} alt="" />
+                            </div>
+                            <div className="flex flex-col gap">
+                                <p className="text-[#151875]">Executive Seat chair</p>
+                                <p className="text-[12px] text-[#151875] line-through">$32.00</p>
+                            </div>
+                        </div>
+                        <div className="w-[267px] h-[74px] flex justify-center items-center gap-3">
+                            <div className="w-[107px] h-full bg-[#F5F6F8] flex justify-center items-center">
+                                <img src={safa2} alt="" />
+                            </div>
+                            <div className="flex flex-col gap">
+                                <p className="text-[#151875]">Executive Seat chair</p>
+                                <p className="text-[12px] text-[#151875] line-through">$32.00</p>
+                            </div>
+                        </div>
+                        <div className="w-[267px] h-[74px] flex justify-center items-center gap-3">
+                            <div className="w-[107px] h-full bg-[#F5F6F8] flex justify-center items-center">
+                                <img src={safa2} alt="" />
+                            </div>
+                            <div className="flex flex-col gap">
+                                <p className="text-[#151875]">Executive Seat chair</p>
+                                <p className="text-[12px] text-[#151875] line-through">$32.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Discount Item */}
+            <div>
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p></p>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <img src="" alt="" />
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     )
 }
