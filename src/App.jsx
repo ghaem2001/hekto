@@ -12,7 +12,7 @@ import Blog from "./pages/Blog"
 
 export default function App(){
   return(
-    <div>
+    <div className="w-full">
 
       <BrowserRouter>
 

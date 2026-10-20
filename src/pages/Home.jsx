@@ -3,6 +3,8 @@ import lamp from "../assets/pictures/home-lamp.png"
 import sofa from "../assets/pictures/home-sofa.png"
 import furniture from "../assets/pictures/Group 153.png"
 import chair from "../assets/pictures/Group 154.png"
+import bgBanner from "../assets/pictures/Rectangle 102.png"
+import trustSymbols from "../assets/pictures/image 1174.png"
 
 // import files
 import FeaturedCard from "../components/FeaturedCard/FeaturedCard"
@@ -13,27 +15,28 @@ import TrendingCard from "../components/TrendingCard/TrendingCard"
 import TrendingBigCard from "../components/TrendingBigCard/TrendingBigCard"
 import TrendingSmallCard from "../components/TrendingSmallCard/TrendingSmallCard"
 import TopCategory from "../components/TopCategory/TopCategory"
+import BlogCard from "../components/BlogCard/BlogCard"
 
 
 export default function Home(){
     return(
-        <div  className="">
+        <div>
 
-            {/* first banner */}
+            {/* first Banner */}
             <div className="w-full h-191 bg-[#F2F0FF] flex flex-col items-center">
                 <div className="w-full h-full flex justify-around">
                     <div>
                         <img className="static right-4" src={lamp} alt="lamp picture" />
                     </div>
                     <div className="flex items-center">
-                        <div className="static right-12 bottom-7 flex flex-col gap-4">
+                        <div className="relative right-8 flex flex-col gap-4">
                             <p className="font-lato text-[#FB2E86]">Best Furniture For Your Castle....</p>
                             <p className="text-[53px] font-bold">New Furniture Collection <br /> Trends in 2020</p>
                             <p className="font-lato text-[#8A8FB9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing <br/> in phasellus non in justo.</p>
                             <PinkBtn/>
                         </div>
                         <div>
-                            <img className="static right-10" src={sofa} alt="" />
+                            <img className="relative right-10" src={sofa} alt="" />
                         </div>
                     </div>
                 </div>
@@ -67,10 +70,10 @@ export default function Home(){
                     <p className="font-bold text-[42px] text-[#151875]">Leatest Products</p>
                 </div>
                 <div className="font-lato text-[#151875] text-[18px] flex gap-18 mt-12">
-                    <p>New Arrival</p>
-                    <p>Best Seller</p>
-                    <p>Featured</p>
-                    <p>Special Offer</p>
+                    <p className="hover:text-[#FB2E86] hover:underline">New Arrival</p>
+                    <p className="hover:text-[#FB2E86] hover:underline">Best Seller</p>
+                    <p className="hover:text-[#FB2E86] hover:underline">Featured</p>
+                    <p className="hover:text-[#FB2E86] hover:underline">Special Offer</p>
                 </div>
                 <div className="mt-18 grid grid-cols-3 gap-15">
                     <LeatestCard/>
@@ -159,9 +162,9 @@ export default function Home(){
                     <p className="text-[42px] text-[#151875] font-bold">Discount Item</p>
                 </div>
                 <div className="flex gap-10 mt-7 text-[#151875] font-lato text-[18px]">
-                    <p className="text-[#FB2E86] decoration-1 underline">Wood Chair</p>
-                    <p>Plastic Chair</p>
-                    <p>Sofa Colletion</p>
+                    <p className="hover:text-[#FB2E86] hover:decoration-1 hover:underline transition">Wood Chair</p>
+                    <p className="hover:text-[#FB2E86] hover:decoration-1 hover:underline transition">Plastic Chair</p>
+                    <p className="hover:text-[#FB2E86] hover:decoration-1 hover:underline transition">Sofa Colletion</p>
                 </div>
                 <div className="flex justify-center items-center gap-">
                     <div className="flex flex-col gap-6">
@@ -210,9 +213,34 @@ export default function Home(){
                 </div>
             </div>
 
+            {/* Newslater Banner */}
+            <div className="flex flex-col justify-center items-center mt-30 bg-contain bg-center bg-no-repeat w-full h-[462px]" style={{backgroundImage:`url(${bgBanner})`}}>
+                <div className="flex flex-col justify-center items-center mt-12 gap-7">
+                    <div>
+                        <p className="text-[35px] text-[#151875] font-bold text-center">Get Leatest Update By Subscribe <br /> 0ur Newslater</p>
+                    </div>
+                    <div>
+                        <PinkBtn/>
+                    </div>
+                </div>
+            </div>
 
+            {/* Trust Symbols */}
+            <div className="mt-20 flex justify-center items-center">
+                <img src={trustSymbols} alt="Trust Symbols" />
+            </div>
 
-
+            {/* Leatest Blog */}
+            <div className="mt-30 flex flex-col justify-center items-center gap-15">
+                <div>
+                    <p className="text-[42px] text-[#151875] font-bold">Leatest Blog</p>
+                </div>
+                <div className="flex justify-center items-center gap-15 mb-10">
+                    <BlogCard/>
+                    <BlogCard/>
+                    <BlogCard/>
+                </div>
+            </div>
 
 
 
