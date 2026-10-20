@@ -4,7 +4,7 @@ export default function Nav(){
 
 
     return(
-            <div className="bg-white sticky top-0 w-full h-19.5 flex justify-around items-center text-[#0D0E43] border-b border-[#E7E6EF]">
+            <div className="z-1000 bg-white sticky top-0 w-full h-19.5 flex justify-around items-center text-[#0D0E43] border-b border-[#E7E6EF]">
 
                 {/* Logo */}
                 <div>
@@ -13,7 +13,7 @@ export default function Nav(){
 
                 {/* Site Pages */}
                 <div>
-                    <ul className="flex gap-10">
+                    <ul className="lg:flex hidden gap-10">
                         <li>Home</li>
                         <li>Pages</li>
                         <li>Products</li>
