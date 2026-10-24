@@ -9,7 +9,7 @@ import Shop from "./pages/Shop"
 import Contact from "./pages/Contact"
 import Account from "./pages/Account"
 import Blog from "./pages/Blog"
-import NotFound from "./pages/notFound"
+import NotFound from "./pages/NotFound"
 
 
 export default function App(){
