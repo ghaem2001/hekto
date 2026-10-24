@@ -12,8 +12,8 @@ export default function Nav(){
                 </div>
 
                 {/* Site Pages */}
-                <div className="lg:flex hidden gap-10">
-                    <ul>
+                <div>
+                    <ul className="hidden lg:flex lg:gap-10">
                         <li>Home</li>
                         <li>Pages</li>
                         <li>Products</li>
