@@ -4,7 +4,6 @@ import sofa from "../assets/pictures/home-sofa.png"
 import furniture from "../assets/pictures/Group 153.png"
 import chair from "../assets/pictures/Group 154.png"
 import bgBanner from "../assets/pictures/Rectangle 102.png"
-import trustSymbols from "../assets/pictures/image 1174.png"
 
 // import files
 import FeaturedCard from "../components/FeaturedCard/FeaturedCard"
@@ -16,6 +15,7 @@ import TrendingBigCard from "../components/TrendingBigCard/TrendingBigCard"
 import TrendingSmallCard from "../components/TrendingSmallCard/TrendingSmallCard"
 import TopCategory from "../components/TopCategory/TopCategory"
 import BlogCard from "../components/BlogCard/BlogCard"
+import TrustSymbols from "../components/TrustSymbols/TrustSymbols"
 
 
 export default function Home(){
@@ -226,9 +226,7 @@ export default function Home(){
             </div>
 
             {/* Trust Symbols */}
-            <div className="mt-20 flex justify-center items-center">
-                <img src={trustSymbols} alt="Trust Symbols" />
-            </div>
+            <TrustSymbols/>
 
             {/* Leatest Blog */}
             <div className="mt-30 flex flex-col justify-center items-center gap-15">
