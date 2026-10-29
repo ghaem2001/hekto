@@ -1,13 +1,16 @@
-import { Link } from "react-router-dom"
+
 
 export default function Header(){
 
-    let showLoginModal = ()=>{
-        let login = document.querySelector("#loginModal")
+    let showLoginModal = () => {
+        const login = document.querySelector("#loginModal")
         login.classList.remove("hidden")
-        
     }
 
+    let hideLoginModal = () => {
+        const login = document.querySelector("#loginModal")
+        login.classList.add("hidden")
+    }
 
     return(
         <div>
@@ -43,10 +46,10 @@ export default function Header(){
             </div>
 
 
-            <div id="loginModal" className="hidde w-full h-screen z-100 fixed bg-[#0000008e]">
+            <div id="loginModal" className="hidden w-full h-screen z-100 fixed bg-[#0000008e]">
 
                 <form className="fixed top-60 left-150 w-[544px] h-[474px] rounded-[10px] bg-white">
-                    <button className="absolute top-0 left-128 text-[32px]">x</button>
+                    <p className="absolute top-0 left-128 text-[32px]" onClick={hideLoginModal}>x</p>
                     <div className="w-[432px] m-auto flex flex-col gap-5 mt-10" id="container">
                         <div className="flex flex-col justify-center items-center">
                             <p className="font-bold text-[32px]">Login</p>
