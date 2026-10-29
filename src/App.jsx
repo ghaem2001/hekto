@@ -1,5 +1,5 @@
 import "./App.css"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import {Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import Nav from "./components/Nav/Nav"
@@ -16,8 +16,6 @@ export default function App(){
   return(
     <div className="w-full">
 
-      <BrowserRouter>
-
         <Header/>
         <Nav/>
 
@@ -32,8 +30,6 @@ export default function App(){
         </Routes>
 
         <Footer/>
-        
-      </BrowserRouter>
 
     </div>
   )
