@@ -21,9 +21,9 @@ export default function Product(){
 
             setProducts(data.products);
             } catch (err) {
-            setError(err.message);
+                setError(err.message);
             } finally {
-            setLoading(false);
+                setLoading(false);
             }
         };
         getProducts();
