@@ -4,7 +4,7 @@ import "./BlogCard.css"
 
 export default function BlogCard(){
     return(
-        <div className="flex flex-col items-start shadow-2xl rounded-[5px]">
+        <div className="flex flex-col items-start shadow-xl hover:shadow-2xl rounded-[5px] transition duration-400">
             <div>
                 <img src={blogImg} alt="Blog Image" className="rounded-[5px]"/>
             </div>
