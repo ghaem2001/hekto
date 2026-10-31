@@ -64,7 +64,9 @@ export default function Header(){
             <div id="loginModal" className="hidden w-full h-screen z-100 fixed bg-[#0000008e]">
 
                 <form className="fixed top-60 left-150 w-[544px] h-[474px] rounded-[10px] bg-white">
-                    <button type="button" className="absolute top-0 left-128 text-[32px]" onClick={closeLoginModal}>x</button>
+                    <button type="button" className="absolute top-4 left-126" onClick={closeLoginModal}>
+                        <i class="text-[22px] fa-solid fa-xmark"></i>
+                    </button>
                     <div className="w-[432px] m-auto flex flex-col gap-5 mt-10" id="container">
                         <div className="flex flex-col justify-center items-center">
                             <p className="font-bold text-[32px]">Login</p>
@@ -96,7 +98,9 @@ export default function Header(){
             <div id="signUpModal" className="hidden w-full h-screen z-100 fixed bg-[#0000008e]">
 
                 <form className="fixed top-60 left-150 w-[544px] h-[474px] rounded-[10px] bg-white">
-                    <button type="button" className="absolute top-0 left-128 text-[32px]" onClick={closeSignUpModal}>x</button>
+                    <button type="button" className="absolute top-4 left-126" onClick={closeSignUpModal}>
+                        <i class="text-[22px] fa-solid fa-xmark"></i>
+                    </button>
                     <div className="w-[432px] m-auto flex flex-col gap-5 mt-8" id="container">
                         <div className="flex flex-col justify-center items-center">
                             <p className="font-bold text-[32px]">Sign Up</p>
