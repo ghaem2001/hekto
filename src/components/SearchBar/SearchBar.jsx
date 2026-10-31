@@ -1,12 +1,18 @@
 export default function SearchBar(){
     return (
-        <div className="p-4 overflow-hidden w-[20px] h-[20px] hover:w-[200px] bg-[#FB2E86] rounded-full flex group items-center duration-500">
-            <div className="flex items-center justify-center fill-white">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24" width={22} height={22}>
-                    <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z" />
-                </svg>
+        <div className="relative h-9 w-9">
+
+            <div className="absolute right-0 top-0 flex h-9 w-9 flex-row-reverse items-center overflow-hidden rounded-full bg-[#7E33E0] transition-all duration-500 hover:w-[220px] focus-within:w-[220px]">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center">
+                    <i class="text-white text-[19px] fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input
+                    type="text"
+                    aria-label="Search"
+                    className="min-w-0 flex-1 bg-transparent px-5 text-[18px] text-white outline-none"
+                />
             </div>
-            <input type="text" className="outline-none text-[18px] bg-transparent w-full text-white font-normal px-2" />
+
         </div>
     )
 }
