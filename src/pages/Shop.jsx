@@ -26,8 +26,18 @@ export default function Shop(){
                                 <option value="Popular">Popular</option>
                             </select>
                         </div>
-                        <div className="hidden lg:flex">
-                            <p>view:</p>
+                        <div className="hidden lg:flex lg:justify-self-center lg:items-center ">
+                            <div className="mr-1">
+                                <p>view :</p>
+                            </div>
+                            <div className="flex justify-center items-center gap-1">
+                                <button>
+                                    <i class="fa-solid fa-grid"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-list"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,6 +48,10 @@ export default function Shop(){
 
             {/* products */}
             <div className="mt-10 flex items-center justify-center">
+                <div>
+
+                </div>
+
                 <Product/>
             </div>
 
