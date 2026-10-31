@@ -38,7 +38,7 @@ export default function Product(){
     if (error) return <p className="p-10 text-center text-red-500">{error}</p>;
 
     return(
-        <div className="grid grid-cols-1 items-cente max-w-360 lg:gap-x-30 lg:gap-y-20 lg:grid-cols-4">
+        <div className="grid grid-cols-1 items-cente max-w-360 lg:gap-x-20 lg:gap-y-20 lg:grid-cols-4">
             {products.map((p) => (
                 <div className="group mt-30 flex gap-1 flex-col justify-center items-center w-[270px] shadow-md hover:shadow-2xl transition duration-300 h-[400px] bg-[#fff]" key={p.id}>
                     <div className="flex justify-center items-center w-62.5 h-70 bg-[#F6F7FB] group-hover:bg-[#eff1f7]">
