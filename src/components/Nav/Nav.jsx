@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
-import SearchBar from "../SearchBar/SearchBar"
 import "./Nav.css"
+import SearchBar from "../SearchBar/SearchBar"
+
+
+import { Link } from "react-router-dom"
 
 export default function Nav(){
     return(
@@ -17,7 +19,10 @@ export default function Nav(){
                 <div>
                     <ul className="hidden lg:flex lg:gap-10">
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/">
+                                Home
+                                <i className="fa-regular fa-chevron-down text-[15px] ml-1"></i>
+                            </Link>
                         </li>
                         <li>Pages</li>
                         <li>Products</li>
