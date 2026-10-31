@@ -27,13 +27,20 @@ export default function Header(){
     }
 
     return(
+
         <div>
 
             <div className="flex justify-center lg:justify-around items-center h-11 bg-[#7E33E0] font-medium">
 
                 <div className="flex text-white gap-20 lg:gap-3">
-                    <p className="hidden lg:flex">ghaemde@gmail.com</p>
-                    <p className="hidden lg:flex">(+98)903-927-4202</p>
+                    <p className="hidden lg:flex lg:justify-center lg:items-center mr-3">
+                        <i className="fa-light fa-envelope mr-1"></i>
+                        <a href="mailto:ghaemde@gmail.com">ghaemde@gmail.com</a>
+                    </p>
+                    <p className="hidden lg:flex lg:justify-center lg:items-center">
+                        <i className="fa-sharp fa-regular fa-phone-volume mr-1"></i>
+                        (+98)903-927-4202
+                    </p>
                     <ul className="lg:hidden">created by</ul>
                     <ul className="lg:hidden">setting</ul>
                 </div>
@@ -41,19 +48,34 @@ export default function Header(){
                 <div>
                     <ul className="lg:flex lg:justify-center lg:items-center hidden text-white gap-9">
                         <li>
-                            <button>English</button>
+                            <button>
+                                English
+                                <i className="fa-regular fa-chevron-down ml-1"></i>
+                            </button>
                         </li>
                         <li>
-                            <button>USD</button>
+                            <button>
+                                USD
+                                <i className="fa-regular fa-chevron-down ml-1"></i>
+                            </button>
                         </li>
                         <li>
-                            <button onClick={openLoginModal}>Login</button>
+                            <button onClick={openLoginModal}>
+                                Login
+                                <i className="fa-regular fa-user ml-1"></i>
+                            </button>
                         </li>
                         <li>
-                            <button>Wishlist</button>
+                            <button>
+                                Wishlist
+                                <i className="fa-regular fa-heart ml-1"></i>
+                            </button>
                         </li>
                         <li>
-                            <button>Cart</button>
+                            <button>
+                                Cart
+                                <i className="fa-light fa-cart-shopping ml-2"></i>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +87,7 @@ export default function Header(){
 
                 <form className="fixed top-60 left-150 w-[544px] h-[474px] rounded-[10px] bg-white">
                     <button type="button" className="absolute top-4 left-126" onClick={closeLoginModal}>
-                        <i class="text-[22px] fa-solid fa-xmark"></i>
+                        <i className="text-[22px] fa-solid fa-xmark"></i>
                     </button>
                     <div className="w-[432px] m-auto flex flex-col gap-5 mt-10" id="container">
                         <div className="flex flex-col justify-center items-center">
@@ -99,7 +121,7 @@ export default function Header(){
 
                 <form className="fixed top-60 left-150 w-[544px] h-[474px] rounded-[10px] bg-white">
                     <button type="button" className="absolute top-4 left-126" onClick={closeSignUpModal}>
-                        <i class="text-[22px] fa-solid fa-xmark"></i>
+                        <i className="text-[22px] fa-solid fa-xmark"></i>
                     </button>
                     <div className="w-[432px] m-auto flex flex-col gap-5 mt-8" id="container">
                         <div className="flex flex-col justify-center items-center">
