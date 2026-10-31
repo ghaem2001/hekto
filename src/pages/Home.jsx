@@ -31,7 +31,7 @@ export default function Home(){
                     <div className="flex items-center">
                         <div className="relative right-8 flex flex-col gap-4">
                             <p className="font-lato text-[#FB2E86]">Best Furniture For Your Castle....</p>
-                            <p className="text-[53px] font-bold">New Furniture Collection <br /> Trends in 2020</p>
+                            <p className="text-[53px] font-bold">New Furniture Collection <br /> Trends in 2026</p>
                             <p className="font-lato text-[#8A8FB9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing <br/> in phasellus non in justo.</p>
                             <PinkBtn/>
                         </div>
