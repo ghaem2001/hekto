@@ -1,11 +1,31 @@
 import "./FeaturedCard.css"
 import chair1 from "../../assets/pictures/Cantilever-chair1.png"
 import GreenBtn from "../GreenBtn/GreenBtn"
+import { useState } from "react"
 
 export default function FeaturedCard(){
+
+    const [liked , setLiked] = useState(false)
+
+
+    let addToCart = () => {
+
+    }
+
+    let addToWishList = () => setLiked(! liked)
+
+
     return(
-        <div className="group mt-3 w-[270px] h-[361px] rounded-[10px] shadow-2xl hover:overflow-hidden">
+        <div className="group mt-3 w-[270px] h-[361px] rounded-[10px] shadow-xl hover:shadow-2xl hover:overflow-hidden cursor-pointer">
             <div className="rounded-[10px] flex flex-col justify-center items-center w-full h-[236px] bg-[#F6F7FB]">
+                <div className="flex gap-2">
+                    <div className="relative top-3 right-24 cursor-pointer" title="Add To Cart" onClick={addToCart}>
+                        <i className="fa-light fa-cart-shopping"></i>
+                    </div>
+                    <div className="relative top-3 right-24 cursor-pointer" title="Add To Wishlist" onClick={addToWishList}>
+                        <i className={liked ? "fa-solid fa-heart text-[#f00]" : "fa-regular fa-heart"}></i>
+                    </div>
+                </div>
                 <img src={chair1} alt="chair picture"/>
                 <div className="opacity-0 group-hover:opacity-100 transition duration-500">
                     <GreenBtn/>
