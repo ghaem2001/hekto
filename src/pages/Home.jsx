@@ -40,11 +40,6 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-                <div className="flex gap-2 mb-10">
-                    <button className="w-[10px] h-[10px] bg-[#FB2E86] rotate-45 border border-[#FB2E86]"></button>
-                    <button className="w-[10px] h-[10px] rotate-45 border border-[#FB2E86]"></button>
-                    <button className="w-[10px] h-[10px] rotate-45 border border-[#FB2E86]"></button>
-                </div>
             </div>
 
             {/* Featured Products */}
@@ -55,12 +50,6 @@ export default function Home(){
                     <FeaturedCard/>
                     <FeaturedCard/>
                     <FeaturedCard/>
-                </div>
-                <div className="flex gap-2 mt-15">
-                    <div className="w-[24px] rounded h-[4px] bg-[#FB2E86]"></div>
-                    <div className="w-[16px] rounded h-[4px] bg-[#FEBAD7]"></div>
-                    <div className="w-[16px] rounded h-[4px] bg-[#FEBAD7]"></div>
-                    <div className="w-[16px] rounded h-[4px] bg-[#FEBAD7]"></div>
                 </div>
             </div>
 
@@ -205,11 +194,6 @@ export default function Home(){
                     <TopCategory/>
                     <TopCategory/>
                     <TopCategory/>
-                </div>
-                <div className="flex justify-center items-center gap-4 mt-15">
-                    <div className="w-[10px] h-[10px]  bg-[#FB2E86] rounded-[50%]"></div>
-                    <div className="w-[10px] h-[10px] border border-[#FB2E86] rounded-[50%]"></div>
-                    <div className="w-[10px] h-[10px] border border-[#FB2E86] rounded-[50%]"></div>
                 </div>
             </div>
 
