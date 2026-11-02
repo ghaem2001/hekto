@@ -21,16 +21,20 @@ export default function Nav(){
                         <li>
                             <Link to="/">
                                 Home
-                                <i className="fa-regular fa-chevron-down text-[15px] ml-1"></i>
                             </Link>
                         </li>
-                        <li>Pages</li>
-                        <li>Products</li>
-                        <li>Blog</li>
                         <li>
                             <Link to="/Shop">Shop</Link>
                         </li>
-                        <li>Contact</li>
+                        <li>
+                            <Link to="/Blog">Blog</Link>
+                        </li>
+                        <li>
+                            <Link to="/About">About Us</Link>
+                        </li>
+                        <li>
+                            <Link to="/Contact">Contact</Link>
+                        </li>
                     </ul>
                 </div>
 
