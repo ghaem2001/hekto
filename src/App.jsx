@@ -10,6 +10,7 @@ import Contact from "./pages/Contact"
 import Account from "./pages/Account"
 import Blog from "./pages/Blog"
 import NotFound from "./pages/NotFound"
+import Cart from "./pages/Cart"
 
 
 export default function App(){
@@ -25,6 +26,7 @@ export default function App(){
           <Route path="/Shop" element={<Shop/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Account" element={<Account/>}/>
+          <Route path="/Cart" element={<Cart/>}/>
           <Route path="/Blog" element={<Blog/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
