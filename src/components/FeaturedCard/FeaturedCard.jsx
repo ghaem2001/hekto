@@ -1,5 +1,5 @@
-import "./FeaturedCard.css"
 import { useState } from "react"
+import "./FeaturedCard.css"
 
 export default function FeaturedCard({product}){
 
@@ -25,7 +25,7 @@ export default function FeaturedCard({product}){
                     </div>
                 </div>
                 <div className="w-full h-full flex justify-center items-center">
-                    <img className="w-full h-full flex justify-center items-center" src={product.thumbnail} alt={product.title}/>
+                    <img className="w-full h-full flex justify-center items-center" src={product.thumbnail} alt={product.title.split(" ").slice(0, 2).join(" ")}/>
                 </div>
             </div>
             <div className="group-hover:bg-[#2F1AC4] flex flex-col justify-center items-center gap-3 py-2">
