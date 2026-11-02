@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 export default function Header(){
@@ -72,10 +73,10 @@ export default function Header(){
                             </button>
                         </li>
                         <li>
-                            <button>
+                            <Link to="/Cart">
                                 Cart
                                 <i className="fa-light fa-cart-shopping ml-2"></i>
-                            </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>
