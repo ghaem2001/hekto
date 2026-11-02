@@ -16,9 +16,18 @@ import TrendingSmallCard from "../components/TrendingSmallCard/TrendingSmallCard
 import TopCategory from "../components/TopCategory/TopCategory"
 import BlogCard from "../components/BlogCard/BlogCard"
 import TrustSymbols from "../components/TrustSymbols/TrustSymbols"
+import { useProducts } from "../context/ProductsContext"
 
 
 export default function Home(){
+
+    const {products , loading} = useProducts()
+
+    const featured = products.filter((p) => p.category === "furniture").slice(0, 4);
+    // const latest = products.slice(4 ,10);
+    // const trending = products.slice(10 ,14);
+
+
     return(
         <div>
 
@@ -45,11 +54,11 @@ export default function Home(){
             {/* Featured Products */}
             <div className="flex flex-col gap-7 justify-center items-center mt-30">
                 <p className="text-[42px] font-bold text-[#1A0B5B]">Featured Products</p>
+                {loading && <p>loading ...</p>}
                 <div className="flex gap-9">
-                    <FeaturedCard/>
-                    <FeaturedCard/>
-                    <FeaturedCard/>
-                    <FeaturedCard/>
+                    {featured.map((produc) => (
+                        <FeaturedCard key={produc.id} product={produc}/>
+                    ))}
                 </div>
             </div>
 
