@@ -7,7 +7,7 @@ export default function FeaturedCard({product}){
 
 
     let addToCart = () => {
-
+        
     }
 
     let addToWishList = () => setLiked(! liked)
