@@ -1,5 +1,6 @@
 import { useProducts } from "../../context/ProductsContext";
 import ProductCard from "../ProductCard/ProductCard";
+
 import "./Product.css"
 
 
@@ -14,8 +15,6 @@ export default function Product(){
                         </div>;
 
     if (error) return <p className="p-10 text-center text-red-500">{error}</p>;
-
-
 
 
 
