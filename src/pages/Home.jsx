@@ -25,7 +25,7 @@ export default function Home(){
 
     const featured = products.filter((p) => p.category === "furniture").slice(0, 4);
     // const latest = products.slice(4 ,10);
-    // const trending = products.slice(10 ,14);
+    const trending = products.filter((p) => p.category === "home-decoration").slice(0, 4);
 
 
     return(
@@ -137,10 +137,12 @@ export default function Home(){
                     </p>
                 </div>
                 <div className="flex justify-center items-center gap-10">
-                    <TrendingCard/>
-                    <TrendingCard/>
-                    <TrendingCard/>
-                    <TrendingCard/>
+                    {loading && <p>loading ...</p>}
+                <div className="flex gap-9">
+                    {trending.map((produc) => (
+                        <TrendingCard key={produc.id} product={produc}/>
+                    ))}
+                </div>
                 </div>
                 <div className="flex gap-10">
                     <TrendingBigCard/>
