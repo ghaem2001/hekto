@@ -38,9 +38,13 @@ export default function Header(){
                         <i className="fa-light fa-envelope mr-1"></i>
                         <a href="mailto:ghaemde@gmail.com">ghaemde@gmail.com</a>
                     </p>
-                    <p className="hidden lg:flex lg:justify-center lg:items-center">
+                    <p className="hidden lg:flex lg:justify-center lg:items-center mr-3">
                         <i className="fa-sharp fa-regular fa-phone-volume mr-1"></i>
                         (+98)903-927-4202
+                    </p>
+                    <p className="hidden lg:flex lg:justify-center lg:items-center">
+                        <i class="fa-brands fa-github fa-width-auto mr-1.5 text-[20px]"></i>
+                        <a href="https://github.com/ghaem2001">ghaem2001</a>
                     </p>
                     <ul className="lg:hidden">created by</ul>
                     <ul className="lg:hidden">setting</ul>
