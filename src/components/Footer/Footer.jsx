@@ -113,9 +113,15 @@ export default function Footer(){
                     </p>
                 </div>
                 <div className="flex gap-3">
-                    <div className="w-[20px] h-[20px] rounded-[50%] bg-[#151875]"></div>
-                    <div className="w-[20px] h-[20px] rounded-[50%] bg-[#151875]"></div>
-                    <div className="w-[20px] h-[20px] rounded-[50%] bg-[#151875]"></div>
+                    <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-[#151875]">
+                        <i className="fa-brands fa-facebook-f text-white"></i>
+                    </div>
+                    <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-[#151875]">
+                        <i className="fa-brands fa-instagram text-white"></i>
+                    </div>
+                    <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-[#151875]">
+                        <i className="fa-brands fa-twitter text-white"></i>
+                    </div>
                 </div>
             </div>
 
