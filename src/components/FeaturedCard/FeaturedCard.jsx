@@ -1,16 +1,24 @@
-import { useState } from "react"
 import "./FeaturedCard.css"
+
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+
+
 
 export default function FeaturedCard({product}){
 
+    const navigate = useNavigate
+
     const [liked , setLiked] = useState(false)
 
+    
+    let addToWishList = () => setLiked(! liked)
 
     let addToCart = () => {
-        
-    }
+        navigate("/Cart")
+    };
 
-    let addToWishList = () => setLiked(! liked)
+
 
 
     return(
